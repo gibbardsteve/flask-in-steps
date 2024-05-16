@@ -1,0 +1,50 @@
+{% extends "layout/_template.njk" %}
+
+{% set pageConfig = {
+    "meta": {
+        "canonicalUrl": "/",
+        "description": "/",
+    },
+    "header": {
+        "title": "Step Three A",
+        "mastheadLogo": {
+            "large": '<img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" height="150" width="250" alt="Office for National Statistics logo">'
+        },
+        "titleLogo": "/",
+    },
+    "footer": {
+        "OGLLink": {
+            "pre": 'All content is available under the',
+            "link": 'Open Government Licence v3.0',
+            "url": 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+            "post": ', except where otherwise stated'
+        }
+    }
+} %}
+{% from "components/panel/_macro.njk" import onsPanel %}
+{% block main %}
+    <h1>Step Three A - Using Nunjucks</h1>
+    {{
+        onsPanel({
+            "variant": 'success',
+            "iconType": 'check',
+            "body": '<p>The preffered way of using the Design System</p>'
+        })
+    
+    }}
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+    {% endblock %}
+      {% block scripts %}
+
+        <style>
+          body {
+            height: auto;
+          }
+        </style>
+
+      {% endblock %}
+    

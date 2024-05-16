@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+  </head>
+  <body>
+    <h1>Steps</h1>
+    {% for step in steps %}
+    <h2 id="step_title">{{ step.title }}</h2>
+    <p>{{ step.description }}</p>
+    {% endfor %}
+  </body>
+
+</html>

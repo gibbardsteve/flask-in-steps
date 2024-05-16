@@ -1,3 +1,7 @@
+# ignore the design system
+src/step_three/templates/components/
+src/step_three/templates/layout/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

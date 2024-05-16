@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-in-steps"
+version = "0.1.0"
+description = "Python Flask step by step"
+authors = ["Steve Gibbard <steve.gibbard@ons.gov.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "flask_in_steps"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+jsonnet = "^0.20.0"
+markdown = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
